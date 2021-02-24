@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  dev:
+    build:
+      context: .
+      #dockerfile: Dockerfile
+    #image: covid-19_stats_dashboard_dev
+    entrypoint: /app/run.sh
+    environment:
+      #REACT_APP_API_URL: http://localhost:8081/
+      NODE_ENV: 'production'
+    ports:
+      - "5000:5000"
