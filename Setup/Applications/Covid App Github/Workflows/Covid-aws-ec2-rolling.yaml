@@ -22,7 +22,7 @@ phases:
   computeProviderName: Amazon Web Services
   daemonSet: false
   infraDefinitionName: Covid Infrastructure for QA
-  name: Phase 1
+  name: Rolling
   phaseSteps:
   - type: INFRASTRUCTURE_NODE
     name: Prepare Infra
@@ -65,8 +65,8 @@ rollbackPhases:
   computeProviderName: Amazon Web Services
   daemonSet: false
   infraDefinitionName: Covid Infrastructure for QA
-  name: Rollback Phase 1
-  phaseNameForRollback: Phase 1
+  name: Rollback Rolling
+  phaseNameForRollback: Rolling
   phaseSteps:
   - type: DISABLE_SERVICE
     name: Disable Service
