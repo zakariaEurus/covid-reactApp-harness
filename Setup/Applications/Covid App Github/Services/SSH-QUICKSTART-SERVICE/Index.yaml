@@ -1,0 +1,5 @@
+harnessApiVersion: '1.0'
+type: SERVICE
+applicationStack: Application Stact ssh-quickstart
+artifactType: TAR
+deploymentType: SSH
