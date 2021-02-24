@@ -1,0 +1,5 @@
+harnessApiVersion: '1.0'
+type: ENVIRONMENT
+configMapYamlByServiceTemplateName: {}
+description: QA Environment for Covid App
+environmentType: NON_PROD
