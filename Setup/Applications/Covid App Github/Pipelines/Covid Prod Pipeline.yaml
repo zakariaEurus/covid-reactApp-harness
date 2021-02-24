@@ -17,7 +17,7 @@ pipelineStages:
     - Account Administrator
     - Non-Production Support
     - Production Support
-    variables: null
+    workflowVariables: null
     stageName: STAGE 2
     timeoutMillis: 1800000
     approvalStateType: USER_GROUP
@@ -25,3 +25,10 @@ pipelineStages:
   skipCondition:
     type: DO_NOT_SKIP
   stageName: STAGE 2
+- type: ENV_STATE
+  name: Prod Deployment
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 3
+  workflowName: Covid-aws-ec2-canary
