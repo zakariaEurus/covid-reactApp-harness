@@ -61,6 +61,31 @@ phases:
     stepsInParallel: false
   - type: VERIFY_SERVICE
     name: Verify Service
+    steps:
+    - type: SHELL_SCRIPT
+      name: Shell Script
+      properties:
+        commandPath: null
+        connectionAttributes: null
+        connectionType: SSH
+        delegateSelectors:
+        - ip-172-31-53-23.us-west-2.compute.internal
+        executeOnDelegate: true
+        host: null
+        outputVars: ''
+        publishAsVar: false
+        scriptString: |-
+          #!/bin/bash
+          mkdir qa_env
+          cd qa_env
+          touch qa_successfull.txt
+        scriptType: BASH
+        sshKeyRef: null
+        sweepingOutputName: null
+        sweepingOutputScope: null
+        templateExpressions: null
+        templateVariables: ''
+        timeoutMillis: 60000
     stepsInParallel: false
   - type: WRAP_UP
     name: Wrap Up
