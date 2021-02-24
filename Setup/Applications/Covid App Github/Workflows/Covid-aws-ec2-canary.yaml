@@ -31,8 +31,8 @@ phases:
       name: Canary
       properties:
         excludeSelectedHostsFromFuturePhases: true
-        instanceCount: 100
-        instanceUnitType: PERCENTAGE
+        instanceCount: 1
+        instanceUnitType: COUNT
         specificHosts: false
         templateUuid: null
         templateVariables: null
