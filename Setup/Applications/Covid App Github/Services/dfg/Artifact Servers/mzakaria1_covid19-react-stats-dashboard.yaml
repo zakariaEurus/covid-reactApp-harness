@@ -1,4 +1,0 @@
-harnessApiVersion: '1.0'
-type: DOCKER
-imageName: mzakaria1/covid19-react-stats-dashboard
-serverName: Covid App Docker Image
