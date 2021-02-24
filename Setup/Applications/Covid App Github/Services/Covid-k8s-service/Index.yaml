@@ -1,6 +1,0 @@
-harnessApiVersion: '1.0'
-type: SERVICE
-artifactType: DOCKER
-deploymentType: KUBERNETES
-description: Covid Application Kubernetes (including Helm, Openshift, etc)
-helmVersion: V2
