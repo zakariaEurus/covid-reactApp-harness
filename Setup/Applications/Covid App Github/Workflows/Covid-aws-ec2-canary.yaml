@@ -22,7 +22,7 @@ phases:
   computeProviderName: Amazon Web Services
   daemonSet: false
   infraDefinitionName: Covid Infrastructure AWS
-  name: Phase 1
+  name: Canary phase
   phaseSteps:
   - type: INFRASTRUCTURE_NODE
     name: Prepare Infra
@@ -72,8 +72,8 @@ rollbackPhases:
   computeProviderName: Amazon Web Services
   daemonSet: false
   infraDefinitionName: Covid Infrastructure AWS
-  name: Rollback Phase 1
-  phaseNameForRollback: Phase 1
+  name: Rollback Canary phase
+  phaseNameForRollback: Canary phase
   phaseSteps:
   - type: DISABLE_SERVICE
     name: Disable Service
