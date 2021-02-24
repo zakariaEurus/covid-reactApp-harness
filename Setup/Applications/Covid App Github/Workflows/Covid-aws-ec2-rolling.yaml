@@ -48,6 +48,13 @@ phases:
       name: Install
       properties:
         commandName: Install
+        delegateSelectors:
+        - ip-172-31-53-23.us-west-2.compute.internal
+        executeOnDelegate: true
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
+        timeoutMillis: 180000
     stepsInParallel: false
   - type: ENABLE_SERVICE
     name: Enable Service
