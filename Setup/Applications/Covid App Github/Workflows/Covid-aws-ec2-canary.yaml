@@ -71,6 +71,30 @@ phases:
   - name: Name
     value: Canary Deployment
   statefulSet: false
+postDeploymentSteps:
+- type: SHELL_SCRIPT
+  name: Shell Script
+  properties:
+    commandPath: null
+    connectionAttributes: null
+    delegateSelectors:
+    - ip-172-31-53-23.us-west-2.compute.internal
+    executeOnDelegate: true
+    host: null
+    outputVars: ''
+    publishAsVar: false
+    scriptString: |
+      #!bin/bash
+      mkdir post_prod
+      cd post_prod
+      touch success.txt
+    scriptType: BASH
+    sshKeyRef: null
+    sweepingOutputName: null
+    sweepingOutputScope: null
+    templateExpressions: null
+    templateVariables: ''
+    timeoutMillis: 60000
 preDeploymentSteps:
 - type: ARTIFACT_CHECK
   name: Artifact Check
