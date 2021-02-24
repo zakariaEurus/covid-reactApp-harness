@@ -9,3 +9,19 @@ pipelineStages:
     type: DO_NOT_SKIP
   stageName: STAGE 1
   workflowName: Covid-aws-ec2-rolling
+- type: APPROVAL
+  name: Approval 1
+  parallel: false
+  properties:
+    userGroups:
+    - Account Administrator
+    - Non-Production Support
+    - Production Support
+    variables: null
+    stageName: STAGE 2
+    timeoutMillis: 1800000
+    approvalStateType: USER_GROUP
+    sweepingOutputName: ''
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 2
