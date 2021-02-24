@@ -1,0 +1,5 @@
+harnessApiVersion: '1.0'
+type: ENVIRONMENT
+configMapYamlByServiceTemplateName: {}
+description: The environment of Covid Applicaiton, Non-Production
+environmentType: NON_PROD
