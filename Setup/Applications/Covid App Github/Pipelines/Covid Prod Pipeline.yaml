@@ -1,11 +1,3 @@
 harnessApiVersion: '1.0'
 type: PIPELINE
 description: 'The pipeline for production environment '
-pipelineStages:
-- type: ENV_STATE
-  name: Covid-aws-ec2-canary
-  parallel: false
-  skipCondition:
-    type: DO_NOT_SKIP
-  stageName: STAGE 1
-  workflowName: Covid-aws-ec2-canary
